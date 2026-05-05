@@ -56,7 +56,14 @@ Exemple:
 
 # Corret and overwrite class SafeWalletCredentials here 
 class SafeWalletCredentials:
-    pass
+    def __init__(self, password):
+        self.__password = password
+
+    def set_password(self, password):
+        self.__password = password
+
+    def get_password(self):
+        return self.__password
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
