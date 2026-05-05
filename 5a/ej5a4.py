@@ -93,16 +93,25 @@ Exemple:
         False False False
         True True True
 """
-
 # Write class DatabaseConnector here
+class DatabaseConnector:
+    def connect(self, database):
+        database.connected = True
 
 # Write class SQLDatabase here
-
+class SQLDatabase:
+    def __init__(self):
+        self.connected = False
 
 # Write class PostgresDatabase here
-
+class PostgresDatabase:
+    def __init__(self):
+        self.connected = False
 
 # Write class RedshiftDatabase here
+class RedshiftDatabase:
+    def __init__(self):
+        self.connected = False
 
 
 # Por la propia naturaleza del ejercicios no se puede probar imprimiendo por pantalla, 
